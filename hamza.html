@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Cybersécurité - Hamza Kiyani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #1f2937;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #111827;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #3b82f6; }
+    section {
+      width: 95%;
+      margin: auto;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease-in;
+    }
+    h2 {
+      color: #1f2937;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #2563eb;
+      display: inline-block;
+    }
+    .card {
+      background-color: white;
+      padding: 25px;
+      margin: 20px 0;
+      border-left: 5px solid #2563eb;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 12px; border-bottom: 1px solid #ddd; }
+    img {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+    a { color: #2563eb; }
+    ul { padding-left: 20px; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Section EBIOS / Autres */
+    .ebios-analysis {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .ebios-analysis h2 {
+      color: #2c3e50;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.8rem;
+    }
+    .ebios-analysis h3 {
+      color: #2c3e50;
+      font-size: 1.4rem;
+      margin: 1.5rem 0 1rem 0;
+    }
+    .ebios-analysis h4 {
+      color: #3498db;
+      font-size: 1.2rem;
+      margin: 1.2rem 0 0.8rem 0;
+    }
+    .subsection {
+      margin-bottom: 1.5rem;
+      padding-left: 1rem;
+      border-left: 3px solid #e8f4fc;
+    }
+    .methodology-steps li {
+      margin-bottom: 0.5rem;
+    }
+    .img-container {
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    .analysis-img {
+      max-width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+    .skill-tag {
+      background-color: #e8f4fc;
+      color: #2c3e50;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .img-container.logigramme {
+      border: 2px solid #2563eb;
+      background-color: #f9fbff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header>
+  <h1>Ingénieur Cybersécurité - Hamza Kiyani</h1>
+  <p>Audit Technique & Organisationnel | Analyse de Risques (EBIOS RM) | Pentest</p>
+</header>
+
+
+<!-- ===================== NAV ======================== -->
+<nav>
+  <a href="#presentation">Présentation</a>
+  <a href="#competences">Compétences</a>
+  <a href="#realisations">Réalisations</a>
+  <a href="#pour-vous">Ce que je peux faire pour vous</a>
+  <a href="#projection">Projection</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ===================== PRESENTATION ===================== -->
+<section id="presentation">
+  <h2>Présentation</h2>
+  <div class="card">
+    <p>Professionnel passionné de cybersécurité avec une double expérience en conseil et ingénierie. Ma vision : intégrer la sécurité à tous les niveaux du SI, avec une approche préventive, pédagogique et orientée résultats.</p>
+    <p><strong>Parcours :</strong> Consultant auditeur cybersécurité, Pentester, Bug Bounty Hunter. Je dispose de compétences variées dans l’audit technique, organisationnel et la mise en place de solutions de supervision.</p>
+  </div>
+</section>
+
+<!-- ===================== COMPETENCES ===================== -->
+<section id="competences">
+  <h2>Compétences et Certifications</h2>
+  <div class="card">
+    <h3>Certifications</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <!-- EBIOS RM déjà certifié -->
+      <li>
+        <strong>EBIOS RM</strong><br>
+        <small>Certifié</small>
+      </li>
+      <!-- CPTS à 42% -->
+      <li style="margin-top: 10px;">
+        <strong>CPTS (Hack The Box Academy)</strong><br>
+        <div style="background-color: #e2e8f0; width: 200px; height: 8px; border-radius: 4px; position: relative; overflow: hidden;">
+          <div style="background-color: #2563eb; width: 42%; height: 100%;"></div>
+        </div>
+        <small style="display: inline-block; margin-top: 5px;">42% complété</small>
+      </li>
+      <!-- CBBH à 85% -->
+      <li style="margin-top: 10px;">
+        <strong>CBBH (Hack The Box Academy)</strong><br>
+        <div style="background-color: #e2e8f0; width: 200px; height: 8px; border-radius: 4px; position: relative; overflow: hidden;">
+          <div style="background-color: #2563eb; width: 85%; height: 100%;"></div>
+        </div>
+        <small style="display: inline-block; margin-top: 5px;">85% complété</small>
+      </li>
+    </ul>
+
+    <h3>Compétences techniques</h3>
+    <table>
+      <tr><th>Domaine</th><th>Compétences</th><th>Niveau</th></tr>
+      <tr>
+        <td>Réseau</td>
+        <td>VLAN, DMZ, TCP/UDP, DHCP, Firewall</td>
+        <td>★★★★☆</td>
+      </tr>
+      <tr>
+        <td>Systèmes</td>
+        <td>Linux, Windows, DNS, AD, LDAP</td>
+        <td>★★★★☆</td>
+      </tr>
+      <tr>
+        <td>Offensif</td>
+        <td>Burp, Metasploit, John the Ripper</td>
+        <td>★★★☆☆</td>
+      </tr>
+      <tr>
+        <td>Défensif</td>
+        <td>SIEM (Graylog), OCS Inventory</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Normes</td>
+        <td>EBIOS RM, ANSSI</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Langages</td>
+        <td>Python, Java</td>
+        <td>★★★☆☆</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+
+
+<!-- ===================== REALISATIONS ===================== -->
+<section id="realisations">
+  <h2>Réalisations et POCs</h2>
+
+ <div class="card">
+  <h3>Test d’intrusion – Boîte grise</h3>
+  <p><strong>Contexte :</strong> J’ai mené un test d’intrusion en boîte grise pour un client. J’ai obtenu un accès au réseau via VPN en utilisant un compte utilisateur de domaine, dans le but d’évaluer la résistance de l’infrastructure interne.</p>
+  
+  <h4>🔍 Étapes clés :</h4>
+  <ul>
+    <li><strong>Découverte du contrôleur de domaine :</strong> 
+      <ul>
+        <li>Lancement d’un scan avec <code>nmap -Pn</code> pour identifier les hôtes critiques.</li>
+      </ul>
+    </li>
+    <li><strong>Analyse de la politique de mots de passe :</strong> 
+      <ul>
+        <li>Politique faible permettant des attaques de type “password spraying”.</li>
+      </ul>
+    </li>
+    <li><strong>Enumération des utilisateurs :</strong> 
+      <ul>
+        <li>Récupération de la liste des comptes de domaine.</li>
+      </ul>
+    </li>
+    <li><strong>Dump des bases SAM, LSA et NTDS :</strong> 
+      <ul>
+        <li>Utilisation d’outils pour extraire les hashes et informations d’authentification (LSASS, lsa, sam, ntds).</li>
+      </ul>
+    </li>
+    <li><strong>Escalade de privilèges :</strong> 
+      <ul>
+        <li>Déchiffrement des hashes via attaques offline (NTLM, Kerberoasting).</li>
+        <li>Obtention du mot de passe d’un compte Admin du domaine.</li>
+      </ul>
+    </li>
+    <li><strong>Post-exploitation :</strong> 
+      <ul>
+        <li>Analyse des partages réseau pour identifier des fichiers sensibles.</li>
+        <li>Attaque Kerberoasting pour forcer les tickets TGS.</li>
+        <li>Cartographie Active Directory à l’aide de <code>BloodHound</code> pour visualiser les chemins d’attaque.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>⚠️ Vulnérabilités majeures :</h4>
+  <ul>
+    <li>Absence de cloisonnement (segmentation réseau) interne.</li>
+    <li>Politique de mots de passe insuffisante (faible complexité, longue durée).</li>
+    <li>Solution antivirus/EDR inefficace face à des outils offensifs communs.</li>
+    <li>Utilisation de mots de passe trop simples et réutilisés.</li>
+  </ul>
+
+  <h4>✅ Recommandations :</h4>
+  <ul>
+    <li>Mettre en place une segmentation réseau stricte (VLAN, DMZ, etc.).</li>
+    <li>Renforcer la politique de mots de passe (complexité, rotation, historique).</li>
+    <li>Déployer une solution de sécurité plus robuste (EDR, SIEM) et activer la détection comportementale.</li>
+    <li>Sensibiliser les utilisateurs sur l’importance des mots de passe forts et de la vigilance face au phishing.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>Durcissement Active Directory</h3>
+  
+  <p><strong>Contexte :</strong> Dans le cadre d’une mission pour un organisme public éligible à ORADAD, j’ai réalisé un audit via <em> Scan ADS</em> pour évaluer la posture de sécurité Active Directory. L’objectif était d’atteindre le <strong>niveau 3</strong> de l’échelle ANSSI.</p>
+  
+  <p><em>L’échelle ANSSI (depuis 2020) :</em></p>
+  <ul>
+    <li>🛑 <strong>Niveau 1 :</strong> Problèmes critiques (danger immédiat)</li>
+    <li>⚠️ <strong>Niveau 2 :</strong> Lacunes graves (mise en danger)</li>
+    <li>🟢 <strong>Niveau 3 :</strong> Sécurité basique</li>
+    <li>🔵 <strong>Niveau 4 :</strong> Bon niveau</li>
+    <li>🏅 <strong>Niveau 5 :</strong> État de l’art</li>
+  </ul>
+  
+  <p>Le scan  a mis en évidence plusieurs vulnérabilités et mauvaises configurations (ex. mots de passe trop faibles, absence de contrôles sur les groupes à privilèges, etc.).</p>
+  
+  <h4>🔧 Actions menées :</h4>
+  <ul>
+    <li>Analyse des résultats du scan (vulnérabilités, failles de configuration)</li>
+    <li>Accompagnement à la correction (politiques de mots de passe, segmentation, audit des groupes AD)</li>
+  </ul>
+  
+  <p><em>Résultat :</em> Passage de la situation “danger” (Niveau 0) à une “sécurité basique” (Niveau 3), conformément à l’objectif de l’organisme, et renforcement global de l’AD pour limiter les risques critiques.</p>
+</div>
+
+
+<div class="card">
+  <h3>Déploiement d’OCS Inventory & Graylog (SIEM)</h3>
+  
+  <p><strong>Objectif :</strong> Automatiser l’inventaire des équipements/logiciels et centraliser la collecte/analyse des logs pour une meilleure visibilité et réactivité en matière de sécurité.</p>
+  
+  <h4>🔑 Réalisations :</h4>
+  <ul>
+    <li>Mise en place d’<strong>OCS Inventory</strong> pour automatiser la découverte et le suivi des actifs (matériel, logiciel).</li>
+    <li>Déploiement et configuration de <strong>Graylog</strong> en tant que SIEM : collecte de logs, corrélation d’événements et alertes en temps réel.</li>
+  </ul>
+  
+  <h4>🔎 Compétences acquises :</h4>
+  <ul>
+    <li>Supervision sécurité avancée (analyse de logs à grande échelle, détection d’incidents).</li>
+    <li>Gestion des correctifs : visibilité sur les actifs à protéger et suivi des mises à jour.</li>
+  </ul>
+
+  <p>Cette expérience me rend opérationnel dans un contexte <strong>SecOps</strong>, où la surveillance continue et la réaction aux alertes sont essentielles pour protéger le SI.</p>
+</div>
+
+  <div class="card ebios-analysis">
+  <h2>🔐 Analyse de Risques – Méthode EBIOS RM</h2>
+  
+  <!-- Contexte -->
+  <p><strong>Contexte :</strong> Réalisation d'une analyse de risques sur un système d'information dans le cadre d’un projet de cybersécurité.</p>
+  
+  <!-- Méthodologie -->
+  <p><strong>Méthodologie :</strong> Application des 5 ateliers EBIOS RM (cadrage, sources de risques, écosystème, scénarios, traitement).</p>
+  
+  <!-- Contributions -->
+  <p><strong>Contributions :</strong></p>
+  <ul>
+    <li>Identification des biens essentiels, parties prenantes et sources de menace.</li>
+    <li>Conception de scénarios stratégiques et opérationnels illustrés.</li>
+    <li>Proposition de mesures de sécurité adaptées aux risques identifiés.</li>
+  </ul>
+  
+  <!-- Outils livrés -->
+  <p><strong>Outils livrés :</strong> Cartes de scénarios, tableau de mesures, synthèse des risques.</p>
+  
+  <!-- Visuels (Scénarios + After Treatment) -->
+  <div class="subsection">
+    <h4>Visuels des scénarios</h4>
+    
+    <!-- Scénario stratégique -->
+    <div class="img-container">
+      <img src="Scénario stratégique.jpeg" 
+           alt="Scénario stratégique d'attaque" 
+           class="analysis-img">
+    </div>
+    <p>Exemple d’un scénario stratégique illustrant un acteur malveillant tentant de compromettre le SI via un prestataire tiers.</p>
+    
+    <!-- Scénario opérationnel -->
+    <div class="img-container">
+      <img src="Scénario_stratégique.jpeg" 
+           alt="Scénario opérationnel d'attaque" 
+           class="analysis-img">
+    </div>
+    <p>Exemple d’un scénario opérationnel décrivant les étapes techniques (intrusion, exfiltration, contournement de sécurité, etc.).</p>
+
+    <!-- Mesures proposées -->
+    <div class="img-container">
+      <img src="after_treatement.jpeg" 
+           alt="Évaluation du risque résiduel après mesures" 
+           class="analysis-img">
+    </div>
+    <p>Présentation des mesures de sécurité proposées et réévaluation du risque résiduel.</p>
+  </div>
+  
+  <!-- Compétences mobilisées -->
+  <p><strong>Compétences mobilisées :</strong> EBIOS RM, analyse de l’écosystème, gestion des risques cyber, raisonnement par scénarios.</p>
+</div>
+
+
+<div class="card">
+  <h3>Procédure de gestion des incidents de sécurité</h3>
+  
+  <p><strong>Contexte :</strong> J’ai participé à l’élaboration d’une procédure structurée permettant de gérer efficacement les incidents de sécurité (intrusions, pannes critiques, erreurs humaines, etc.).</p>
+  
+  <p><strong>Objectif :</strong> Définir un enchaînement d’actions cohérent pour :
+    <ul>
+      <li>Détecter et qualifier les incidents selon leur criticité</li>
+      <li>Activer les mesures d’urgence (confinement, correction) sans délais excessifs</li>
+      <li>Communiquer aux parties prenantes internes et externes</li>
+      <li>Capitaliser sur les retours d’expérience pour renforcer la posture cybersécurité</li>
+    </ul>
+  </p>
+  
+  <!-- Illustration du processus pour un incident interne -->
+  <div class="img-container" style="margin-top: 1rem;">
+    <img src="image .png" alt="Processus de gestion d’un incident interne" class="analysis-img">
+  </div>
+
+  <p>
+    <em>Points saillants du plan :</em> Ce document décrit notamment les rôles et responsabilités, le logigramme d’escalade, les modalités de notification et la conduite à tenir en cas d’incident. Il s’avère essentiel pour aligner toutes les équipes et garantir une réponse claire et concertée.
+  </p>
+
+  <p><strong>En bref :</strong> Cette procédure offre un cadre complet pour gérer tout incident de sécurité, depuis la détection jusqu’à la résolution, et constitue un outil de référence pour préserver la disponibilité, l’intégrité et la confidentialité du SI.</p>
+</div>
+<div class="card">
+
+  <h3>Plan d'Assurance Sécurité (PAS)</h3>
+  
+  <p><strong>Contexte :</strong> J’ai participé à la rédaction d’un Plan d’Assurance Sécurité dans le cadre d’une prestation d’infogérance, afin de cadrer et structurer l’ensemble des mesures de sécurité techniques, humaines et organisationnelles.</p>
+  
+  <p><strong>Objectif :</strong> Définir les dispositions relatives à la sécurité du SI mises en œuvre par le titulaire XXXX, tout au long de la prestation, en cohérence avec les exigences contractuelles et les bonnes pratiques en cybersécurité.</p>
+  
+  <p>Ce PAS formalise :
+    <ul>
+      <li>Les rôles et responsabilités des différents acteurs (titulaire, client, prestataires).</li>
+      <li>Les mesures de sécurité (organisationnelles, humaines, techniques) à mettre en œuvre.</li>
+      <li>Les procédures de suivi, de contrôle et d’audit régulier.</li>
+      <li>La gestion de la continuité, des incidents et les modalités de reporting.</li>
+    </ul>
+  </p>
+  
+  <p><em>Résultat :</em> Le PAS garantit un niveau de sécurité adéquat pendant toute la durée du contrat, assurant une approche préventive et continue de la cybersécurité.</p>
+
+  <!-- Div pour une éventuelle animation (si tu as un script JS/CSS) -->
+  <div id="animated-pas"></div>
+</div>
+
+<div class="card">
+  <h3>Procédure d’intégration de la sécurité dans les projets</h3>
+  
+  <p><strong>Objectif :</strong> Assurer une sécurité adaptée à chaque nouveau projet de XXX, en cohérence avec la PSSI et les bonnes pratiques. Cette procédure définit :</p>
+  <ul>
+    <li>Les objectifs de sécurité « by design »</li>
+    <li>Les rôles et responsabilités (chefs de projet, responsables métiers, RSSI, etc.)</li>
+    <li>Les phases clés (expression des besoins, exigences, validation, etc.)</li>
+    <li>Les contrôles et validations en fin de projet</li>
+  </ul>
+  
+  <p><em>Note :</em> Elle s’applique à tous les projets internes ou externalisés, et s’intègre au référentiel cybersécurité de XXX.</p>
+  
+  <h4>📄 <strong>Plan succinct</strong> :</h4>
+  <pre style="white-space: pre-wrap; font-family: 'Inter', sans-serif;">
+1. Préambule (objectif, périmètre)
+2. Informations pratiques (rôles, introduction)
+3. Gestion d’un projet interne (analyse des besoins, exigences, contrôle)
+4. Gestion d’un projet externalisé (contrat, PAS, clauses SSI)
+  </pre>
+</div>
+
+
+</section>
+
+<!-- ===================== SECTION : CE QUE JE PEUX FAIRE POUR VOUS ===================== -->
+<section id="pour-vous">
+  <h2>Ce que je peux faire pour vous</h2>
+
+  <div class="card">
+    <h3>🔒 Maintien en Condition de Sécurité (MCS)</h3>
+    <p>Veille et mise à jour régulières des systèmes, patch management, audits périodiques et actions correctives ciblées.</p>
+  </div>
+
+  <div class="card">
+    <h3>🔍 Cartographie du SI</h3>
+    <p>Réalisation d’une cartographie complète (physique, logique, données sensibles) pour identifier les flux et hiérarchiser les risques.</p>
+  </div>
+
+  <div class="card">
+    <h3>🛡️ Analyse et évaluation des vulnérabilités</h3>
+    <p>Scan de vulnérabilités, reporting et mise en place d’un plan de correction. Vigilance sur les menaces émergentes.</p>
+  </div>
+
+  <div class="card">
+    <h3>⚠️ Rédaction de procédures et préparation à la gestion de crise</h3>
+    <p>Élaboration de procédures claires, plans de continuité et exercices de simulation pour réduire l’impact d’incidents majeurs.</p>
+  </div>
+
+  <div class="card">
+    <h3>👁️ Surveillance avancée des systèmes</h3>
+    <p>Mise en place d’outils SIEM, revue des logs, suivi des comptes à privilèges, alertes en temps réel.</p>
+  </div>
+
+  <div class="card">
+  <h3>🔬 Audits de sécurité</h3>
+  <p>
+    Réalisation d’audits de sécurité (pentests, vérification de configuration) pour évaluer la robustesse du SI.
+    L’objectif est de repérer les vulnérabilités et de proposer des mesures correctives afin de renforcer la protection globale de l’organisation.
+  </p>
+</div>
+
+<div class="card">
+    <h3>🧑‍💻 Sensibilisation des collaborateurs</h3>
+    <p>
+      Formation aux bonnes pratiques cybersécurité : mots de passe, détection du phishing, verrouillage de session, navigation sécurisée, etc.
+      L’objectif est de renforcer la culture cybersécurité au quotidien, pour que chaque collaborateur devienne un acteur de la protection du SI.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>🏛️ Sensibilisation des décideurs</h3>
+    <p>
+      Approche stratégique pour les COMEX : évaluation des risques métiers, ROI de la cybersécurité et veille sur les enjeux réglementaires
+      (RGPD, <strong>NIS2</strong>, <strong>ISO 27001</strong>). Le but est d’accompagner les dirigeants dans la définition d’une politique SSI
+      adaptée, tenant compte des contraintes business et légales.
+    </p>
+  </div>
+
+<!-- ===================== SECTION : PROJECTION PROFESSIONNELLE ===================== -->
+<section id="projection">
+  <h2>🎯 Ma projection professionnelle</h2>
+  <div class="card">
+    <p>
+      Mon ambition à moyen terme est de devenir Responsable de la Sécurité des Systèmes d’Information (RSSI) d’ici environ 7 ans. Pour y parvenir, je souhaite d’abord consolider mes compétences techniques et opérationnelles en occupant un poste d’Analyste Cybersécurité ou d’Ingénieur Cybersécurité. 
+    </p>
+    <p>
+      Conscient qu’un bon RSSI doit maîtriser à la fois les aspects techniques, managériaux et stratégiques, je prévois d’acquérir progressivement ces compétences au fil de mes missions et formations. Dans cette optique, j’envisage de poursuivre mes certifications (après la CPTS, viser la CISSP ou d’autres titres complémentaires) et de prendre, pas à pas, plus de responsabilités dans la gestion de projets de sécurité.
+    </p>
+    
+    <!-- Illustration de la trajectoire professionnelle -->
+    <div class="img-container" style="margin-top: 1rem;">
+      <img src="roadmap.png" alt="Évolution de carrière prévue sur 7 ans" class="analysis-img">
+    </div>
+    
+    <ul>
+      <li><strong>Étape 1 :</strong> Renforcer l’expertise technique (SecOps/Ingénieur Cyber).</li>
+      <li><strong>Étape 2 :</strong> Évoluer en interne (Chef de projet sécurité, Responsable d’équipe SecOps).</li>
+      <li><strong>Étape 3 :</strong> Devenir RSSI : management, pilotage stratégique, vision 360° de la SSI.</li>
+    </ul>
+
+    <p>
+      Cette trajectoire reflète ma volonté de grandir avec l’entreprise. En mettant à profit chaque expérience, je compte non seulement approfondir mes compétences, mais aussi développer les qualités de leadership et de gouvernance indispensables pour assurer une sécurité pérenne au plus haut niveau.
+    </p>
+  </div>
+</section>
+
+   
+
+
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>Nom :</strong> Hamza Kiyani</li>
+      <li><strong>Email :</strong> <a href="mailto:hamzakiyani561@gmail.com">hamzakiyani561@gmail.com</a></li>
+      <li><strong>Téléphone :</strong> +33 7 61 95 15 85</li>
+      <li><strong>Localisation :</strong> France</li>
+      <li>
+        <strong>TryHackMe :</strong>
+        <a href="https://tryhackme.com/p/PITCHO" target="_blank" rel="noopener noreferrer">
+          PITCHO (Top 1% mondial)
+        </a>
+      </li>
+      <li>
+        <strong>LinkedIn :</strong>
+        <a href="https://www.linkedin.com/in/hamzakiyanii/" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/hamzakiyanii
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <p>&copy; 2025 Hamza Kiyani – Portfolio Cybersécurité</p>
+</footer>
+
+</body>
+</html>
